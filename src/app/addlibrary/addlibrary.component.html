@@ -1,0 +1,66 @@
+<app-navbar></app-navbar>
+
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+
+<div class="row g-4">
+    <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+    <label for="" class="form-label">Book Code</label>
+    <input type="text" class="form-control" name="bookcode" [(ngModel)]="bookcode">
+</div>
+
+<div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+    <label for="" class="form-label">Book Name</label>
+    <input type="text" class="form-control" name="bookname" [(ngModel)]="bookname">
+
+</div>
+<div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+    <label for="" class="form-label">Book Type</label>
+    <select name="booktype" [(ngModel)]="booktype" id="" class="form-control">
+        <option value="Story">Story</option>
+        <option value="Horror">Horror</option>
+        <option value="Biography">Biography</option>
+        <option value="Travel Literature">Travel Literature</option>
+    </select>
+</div>
+
+<div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+    <label for="" class="form-label">Author Name</label>
+<input type="text" class="form-control" name="authorname" [(ngModel)]="authorname">
+</div>
+<div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+    <label for="" class="form-label">Issue date</label>
+<input type="date" name="issuedate" [(ngModel)]="issuedate" id="" class="form-control">    
+</div>
+
+
+
+
+
+
+<div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12-col-xxl-12">
+
+<button class="btn btn-info" [disabled]="status" (click)="readValues()">Submit</button>
+</div>
+
+
+
+
+</div>
+
+
+
+
+        </div>
+
+   
+</div>
+</div>
+
+
+
