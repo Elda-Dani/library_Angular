@@ -9,6 +9,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { ViewallComponent } from './viewall/viewall.component';
+import { SearchbookComponent } from './searchbook/searchbook.component';
 
 const appRoutes:Routes=[
   {
@@ -16,6 +17,9 @@ const appRoutes:Routes=[
   },
   {
     path:"view",component:ViewallComponent
+  },
+  {
+    path:"search",component:SearchbookComponent
   }
 ]
 
@@ -24,7 +28,8 @@ const appRoutes:Routes=[
     AppComponent,
     AddlibraryComponent,
     NavbarComponent,
-    ViewallComponent
+    ViewallComponent,
+    SearchbookComponent
   ],
   imports: [
     BrowserModule,

@@ -15,4 +15,12 @@ viewData=()=>{
   addData=(data:any)=>{
     return this.http.post("http://localhost:8080/addlibrary",data)
   }
+
+  deleteBooks=(data:any)=>{
+    return this.http.post("http://localhost:8080/deletebook",data)
+  }
+
+  searchBook=(data:any)=>{
+    return this.http.post("http://localhost:8080/searchbook",data)
+  }
 }

@@ -1,0 +1,47 @@
+<app-navbar></app-navbar>
+
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+<div class="row g-4">
+    <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+<label for="" class="form-label">Book Code</label>
+<input type="text" class="form-control" name="bookcode" [(ngModel)]="bookcode">
+
+    </div>
+    <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+        <button class="btn btn-primary" (click)="readValue()">Search</button>
+    </div>
+
+
+
+<div *ngFor="let i of data">
+    <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+        <label for="" class="form-label">Book Code</label>
+        <input type="text" class="form-control" value="{{i.bookcode}}">
+        
+        </div>
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <label for="" class="form-label">Book Name</label>
+        <input type="text" class="form-control" value="{{i.bookname}}">
+        </div>
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <label for="" class="form-label">Book Type</label>
+        <input type="text" class="form-control" value="{{i.booktype}}">
+        </div>
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <label for="" class="form-label">Author</label>
+        <input type="text" class="form-control" value="{{i.authorname}}">
+        </div>
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <label for="" class="form-label">Issue Date</label>
+        <input type="text" class="form-control" value="{{i.issuedate}}">
+        </div>
+</div>
+    
+</div>
+
+        </div>
+    </div>
+</div>

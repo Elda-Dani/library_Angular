@@ -22,6 +22,21 @@ fetchData=()=>{
   )
 }
 
+
+deleteBook=(id:any)=>{
+let data={
+  "id":id
+}
+this.myapi.deleteBooks(data).subscribe(
+  (response)=>{
+    alert ("Deleted")
+  }
+)
+
+this.fetchData()
+
+}
+
 libraryData:any=[]
 
   ngOnInit(): void {
